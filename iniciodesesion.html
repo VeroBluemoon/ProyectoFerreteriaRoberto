@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Mi CSS-->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="./IMAGENES/Logo.jpeg">
+    
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+        <img class= "header__logo imagenMediana" src="./IMAGENES/Logo.jpeg" alt="Logo Ferreteria Roberto"> </a>
+        <h1 class="fondonegro">FERRETERIA ROBERTO</h1>
+        <p class="header__title"> Donde encontraras el cosito del cosito</p>
+        <hr/>
+        <nav class="header__menu">
+            <!--LISTA DESORDENADA-->
+            <ul>
+                <li> <a href="index.html">Inicio </a></li>
+                <li> <a href="index.html#quienessomos"> Quienes Somos </a> </li>
+                <li> <a href= "index.html#ofertas">Ofertas</a></li>
+                <li><a href= "index.html#nuevosproductos">Nuevos Productos </a></li>
+                <li> <a href= "index.html#laherramientadelasemana">La Herramienta de la Semana </a></li>
+                <li> <a href= "index.html#outlet">Outlet</a></li>
+                <li> <a href= "index.html#distribuidoresoficiales">Distribuidores Oficiales</a></li>
+                <li><a href="iniciodesesion.html">Inicio de Sesion </a></li>
+                <li> <a href="contacto.html">Contacto </a></li>
+            </ul>
+        </nav>
+   
+    </header>
+    <section>
+    <h2>Inicio de Sesion</h2>
+    <!--LISTA ORDENADA-->
+    <form action="/" method="post">
+        <fieldset>
+            <legend>Inicio de Sesion</legend>
+        <label for="nombre">Nombre:</label>
+        <input id= "nombre" type="text">
+        <br/>
+        <label for="dni">DNI:</label>
+        <input id= "dni" type="number">
+        <br/>
+        <label for="Email">Email:</label>
+        <input id= "email" type="email">
+        <br/>
+        <label for="password">Password:</label>
+        <input type="password">
+        <br/>
+        <input type="submit" value="Enviar Formulario">
+        <input type="submit" value="Resetear campos">
+        <br>
+        <br>
+        </fieldset>
+    </form>
+    </section>
+
+    <footer>
+       
+        <article class="footerArticleUbicacion">
+            <h2>Ubicacion</h2> 
+            <article><iframe class="imagenUbicacion" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13133.434158985476!2d-58.5662712!3d-34.6203787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49c71f5a5466ca7e!2sFerreteria%20Roberto!5e0!3m2!1ses!2sar!4v1635610637113!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></article>
+        </article>
+
+        <article>
+            <h2>Redes Sociales</h2>
+            <table border="1" cellpadding=20 cellspacing= 5>
+                <tr>
+                    <th><a href="https://www.facebook.com/ferreteriaroberto">
+                    <img class="imagenChiquita" src="./IMAGENES/logo-facebook.png" alt="Logo Facebook"> </a></th>
+                    <th><img class="imagenChiquita" src="./IMAGENES/logo-instagram.png" alt="Logo Instagram"> </th>
+                    <th><img class="imagenChiquita" src="./IMAGENES/logo-twitter.jpeg" alt="Logo Twitter"> </th>
+
+                    
+                </tr>
+
+            </table>
+        </article>
+       
+    </footer>
+</body>
+</html>

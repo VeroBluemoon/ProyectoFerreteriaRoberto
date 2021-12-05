@@ -1,0 +1,381 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+    padding: 50px 30px 20px 30px;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+      
+    
+    }
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.header__logo {
+    background-color: white;
+
+}
+
+.header__title {
+    background-color: rgb(241, 91, 91);
+
+}
+
+.header__menu {
+    background-color: rgb(186, 243, 140);
+    
+}
+
+.header nav ul{
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.header nav li {
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+h1 {
+    color:red;
+    background-color: black;
+    
+}
+
+p {
+    color: black;
+    text-align: center;
+    
+}
+
+
+section {
+    background-color: #a6df8c;
+     
+    
+}   
+   
+.classTablasBloque {
+    width: 100%;
+    height: 200px;
+
+    
+    
+}
+.classTablasOpciones {
+    color: rgb(63, 6, 85);
+    text-align: center;
+}
+
+
+#tituloquienessomos {
+    color: black;
+    background-color: blueviolet;
+    background-image: linear-gradient(to left, rgb(36, 15, 126), rgb(16, 186, 216));
+    
+}
+
+.fotoQuienesSomos {
+    margin: 50px;
+    transform: translate(300px);
+    
+    
+}
+
+.quienessomosDescripcion {
+    font-style: italic ;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.6;
+    background-image: url(./IMAGENES/productos-ferreteria-industrial-online.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    padding: 20px;
+    margin: 50px;
+    border-style: solid;
+    
+
+}
+
+.flexConteiner {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; 
+    
+}
+
+.flexItem {
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.red {
+    background-color: rgb(165, 30, 7);
+    
+    
+}
+.red:hover {
+    transform: scale(1.5);
+}
+
+.blue {
+    background-color: blue;
+
+}
+
+.blue p {
+   
+    color: white;
+}
+
+.blue:hover{
+    transform: rotate(45deg);
+}
+.blue p:hover {
+    transform: rotate(-45deg);
+    
+}
+
+.green {
+    background-color: rgb(5, 129, 42);
+
+}
+
+.green:hover {
+    transform: skew(15deg,0deg);
+    background-color: rgb(70, 6, 129);
+}
+
+.gridConteiner {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: 
+     "pintura destornillador destornillador"
+     "pintura motita clavos"
+     "pintura thinner clavos"
+     "pintura arena arena"
+ 
+}
+
+.gridItem {
+    
+    color: black;
+    text-decoration: black;
+    text-align: center;
+    transition: transform 1.2s; 
+}
+
+.gridItem:hover {
+    transform: scale(1.2);
+}
+
+.redo {
+    background-color: rgb(165, 30, 7);
+    grid-area: pintura;
+}
+
+.blueo {
+    background-color: blue;
+    grid-area: destornillador;
+
+}
+
+.greeno {
+    background-color: rgb(5, 129, 42);
+    grid-area: thinner;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-area: clavos;
+}
+
+.violet {
+    background-color: violet;
+    grid-area: motita;
+
+}
+
+.turquesa {
+    background-color: turquoise;
+    grid-area: arena;
+}
+
+
+
+footer {
+    background-color: #e44040;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imagenChiquita {
+    width: 30px;
+    height: 30px;
+}
+
+.imagenMediana {
+    width: 100px;
+    height: 100px;
+}
+
+.imagenMedianaGrande {
+    width: 500px;
+    height: 500px;
+}
+
+.imagenOferta {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+ 
+.footerArticleUbicacion {
+     border-style: solid;
+     text-align: center;
+     padding: 40px;
+
+
+ }
+
+.asidePublicidad {
+    width: 350px;
+    height: 350px;
+    color: black;
+    text-align: center;
+    background-color: turquoise;
+    border: 3px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    display: none; 
+    margin-bottom: 20px;
+    
+       
+    animation-name: rotacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+     
+     
+ }
+ .asidePublicidad img {
+     width: 100%;
+     z-index: -1000;
+ }
+
+ .asidePublicidad p {
+     font-size: 1.875rem;
+     margin-top: 20px;
+ }
+
+
+.tableResponsive {
+    width: 100vw;
+    overflow: auto;
+
+}
+
+.videoYoutube {
+    width: 560px;
+    height: 560px;
+}
+
+.imagenUbicacion {
+    width: 560px;
+    height: 560px;
+}
+@keyframes rotacion {
+    0%{ 
+        width: 100px; 
+    }
+    25%{ 
+        width: 300px; 
+    }
+    50%{ 
+        width: 200px;
+        background-color: red; 
+    }
+    75%{ 
+        width: 300px;
+    }
+    100%{ 
+        width: 100px;
+        background-color:green;
+    }
+ }
+
+
+
+
+@media screen and (max-width: 500px) {
+    .tableResponsive {
+        width: 100%;
+        overflow: auto;
+        
+    }
+    .flexItem {
+        width: 90px;
+        height: 90px;
+    }
+
+    .imagenMedianaGrande {
+        width: 50%;
+        height: 50%;
+    }
+
+    .videoYoutube {
+        width: 50%;
+        height: 50%;
+    }
+
+    .imagenUbicacion {
+        width: 50%;
+        height: 50%;
+    }
+
+    .fotoQuienesSomos {
+        transform: translate(0);
+    }
+    .red {
+        transform: scale(1);
+
+ }
+}
+
