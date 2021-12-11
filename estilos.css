@@ -95,8 +95,8 @@ section {
 }
 
 .fotoQuienesSomos {
-    margin: 50px;
-    transform: translate(300px);
+    margin: 0px;
+    
     
     
 }
@@ -104,14 +104,14 @@ section {
 .quienessomosDescripcion {
     font-style: italic ;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 14.5px;
     line-height: 1.6;
     background-image: url(./IMAGENES/productos-ferreteria-industrial-online.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: auto;
-    padding: 20px;
-    margin: 50px;
+    padding: 0px;
+    margin: 0px;
     border-style: solid;
     
 
@@ -236,7 +236,11 @@ section {
     grid-area: arena;
 }
 
-
+.descripcionHerramienta {
+    font-size: 17.5px
+  }
+  
+ 
 
 footer {
     background-color: #e44040;
@@ -375,7 +379,10 @@ footer {
     }
     .red {
         transform: scale(1);
+    }
 
- }
+    .descripcionHerramienta {
+      font-size: 10px;
+    }
 }
 

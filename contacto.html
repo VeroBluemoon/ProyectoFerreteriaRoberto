@@ -4,75 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-   <!--Google Fonts-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-   <!--Animaciones-->
-   <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-   <!--Mi CSS-->
-   <link rel="stylesheet" href="estilos.css">
-   <link rel="shortcut icon" href="./IMAGENES/Logo.jpeg">
-    
+    <title>Ferreteria Roberto Web</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Animaciones-->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Mi CSS-->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="./IMAGENES/Logo.jpeg">
+   
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html">
-        <img class= "header__logo imagenMediana" src="./IMAGENES/Logo.jpeg" alt="Logo Ferreteria Roberto"> </a>
-        <h1 class="fondonegro">FERRETERIA ROBERTO</h1>
-        <p class="header__title"> Donde encontraras el cosito del cosito</p>
-        <hr/>
-        <nav class="header__menu">
-            <!--LISTA DESORDENADA-->
-            <ul>
-                <li> <a href="index.html">Inicio </a></li>
-                <li> <a href="index.html#quienessomos"> Quienes Somos </a> </li>
-                <li> <a href= "index.html#ofertas">Ofertas</a></li>
-                <li><a href= "index.html#nuevosproductos">Nuevos Productos </a></li>
-                <li> <a href= "index.html#laherramientadelasemana">La Herramienta de la Semana </a></li>
-                <li> <a href= "index.html#outlet">Outlet</a></li>
-                <li> <a href= "index.html#distribuidoresoficiales">Distribuidores Oficiales</a></li>
-                <li><a href="iniciodesesion.html">Inicio de Sesion </a></li>
-                <li> <a href="contacto.html">Contacto </a></li>
+  <header class="header">
+    <h1 class="fondonegro">FERRETERIA ROBERTO</h1>
+    <p class="header__title"> Donde encontraras el cosito del cosito</p>
+    <hr/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img class= "header__logo imagenMediana" src="./IMAGENES/Logo.jpeg" alt="Logo Ferreteria Roberto"> </a>
+           
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#quienessomos"> Quienes Somos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href= "index.html#ofertas">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href= "index.html#nuevosproductos">Nuevos Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href= "index.html#laherramientadelasemana">La Herramienta de la Semana </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href= "index.html#outlet">Outlet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href= "index.html#distribuidoresoficiales">Distribuidores Oficiales </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iniciodesesion.html">Inicio de Sesion </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Herramientas</a></li>
+                  <li><a class="dropdown-item" href="#">Pintureria</a></li>
+                  <li><a class="dropdown-item" href="#">Sanitarios</a></li>
+                  <li><a class="dropdown-item" href="#">Electricidad</a></li>
+                  <li><a class="dropdown-item" href="#">Buloneria</a></li>
+                  <li><a class="dropdown-item" href="#">Automotores</a></li>
+                  <li><a class="dropdown-item" href="#">Productos Quimicos</a></li>
+                  <li><a class="dropdown-item" href="#">Bazar</a></li>
+                  <li><a class="dropdown-item" href="#">Natatorios</a></li>
+                </ul>
+              </li>
+
             </ul>
-        </nav>
-   
-    </header>
+
+          </div>
+
+        </div>
+      </nav>
+
+</header>
 <section>
-    <h2>Contacto</h2>
-    <!--LISTA ORDENADA-->
-    <form action="/" method="post">
-        <fieldset>
-            <legend>Formulario de Contacto</legend>
+    <div class="container">
+     <h2>Contacto</h2>
+     <!--LISTA ORDENADA-->
+     <form action="#" method="post">
+     <fieldset>
+        <legend>Formulario de Contacto</legend>
+        
+      <div class="form-group">
         <label for="nombre">Nombre:</label>
-        <input id= "nombre" type="text" required>
-        <br/>
+        <input class= "form-control" id= "nombre" type="text" placeholder= "Nombre y Apellido" required>
+        
+      </div>
+
+      <div class="form-group">
         <label for="dni">DNI:</label>
-        <input id= "dni" type="number" required>
-        <br/>
+        <input class= "form-control" id= "dni" type="number"  placeholder= "Ingrese su DNI" required>
+       
+      </div>
+
+      <div class="form-group">
         <label for="Email">Email:</label>
-        <input id= "email" type="email" required>
-        <br/>
+        <input class="form-control" id= "email" type="email" placeholder="Ingrese su Email" required>
+        
+      </div>
+
+      <div class="form-group">
         <label for="Consulta">Consulta:</label>
-        <input id= "consulta" type="text" required placeholder="Ingrese su Consulta">
-        <br/>
+        <textarea class="form-control" id= "consulta" type="text" required placeholder="Ingrese su Consulta"></textarea>
+        
+      </div>
+
+      <div class="form-group">
+        <label for="Region">Region:</label>
         <select name="Domicilio"> 
             <option value="CABA">CABA></option>
             <option value="GBA">GBA></option>
             <option value="Resto del pais">Resto del pais></option>
         </select>
-        <br/>
-        <label for="">Acepta loss Terminos y Condiciones:</label>
-        <input type="checkbox" name="acepta" value="1" required/>
-        <br/>
-        <input type="submit" value="Enviar Formulario">
-        <input type="submit" value="Resetear campos">
+  
+      </div>
 
-        <br/>
-        </fieldset>
+      <div>
+        <label for="">Acepta los Terminos y Condiciones:</label>
+        <input type="checkbox" name="acepta" value="1" required/>
+       
+      </div>
+
+      <div class="form-group">
+        <button type="button" class="btn btn-primary" value="Enviar Consulta"> Enviar Consulta</button>
+        <button type="button" class="btn btn-dark" value="Resetear campos"> Resetear Campos </button>
+      </div> 
+
+    </fieldset>
     </form>
+    </div>
     </section>
     <footer>
        
