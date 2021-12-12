@@ -1,0 +1,30 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: $colorAzul;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 9999;
+    
+    &Logo {
+    background-color: white;
+    }
+
+    &Title {
+    background-color: rgb(241, 91, 91);
+    }
+
+    &Menu {
+    background-color: rgb(186, 243, 140);
+    }
+    
+    & nav ul{
+    list-style-type: none;
+    text-align: center;
+    }
+    
+    & nav li {
+    display: inline-block;
+    margin-right: 15px;
+    }
+    
+}

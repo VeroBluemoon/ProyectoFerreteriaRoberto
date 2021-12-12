@@ -1,0 +1,18 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 9999; }
+  .headerLogo {
+    background-color: white; }
+  .headerTitle {
+    background-color: #f15b5b; }
+  .headerMenu {
+    background-color: #baf38c; }
+  .header nav ul {
+    list-style-type: none;
+    text-align: center; }
+  .header nav li {
+    display: inline-block;
+    margin-right: 15px; }
