@@ -25,3 +25,26 @@
     
 
 }
+.boton {
+	width:200px;
+	height:50px;
+    position: relative;
+    left: 175px;
+	background-color:white;
+	text-align:center;
+	color:black;
+	border-radius:20px;
+	border: 2px solid black;
+}
+
+.boton--Whatssap{
+	@extend .boton;
+	background-color:green;
+	color:white;
+}
+.boton--Messenger{
+	@extend .boton;
+	background-color:rgb(8, 51, 179);
+	color: rgb(208, 193, 243);
+}
+

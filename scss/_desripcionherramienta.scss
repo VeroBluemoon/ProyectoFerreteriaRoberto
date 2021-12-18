@@ -1,3 +1,14 @@
-.descripcionHerramienta {
-    font-size: 17.5px
+  @mixin ejemploMixin($alto, $ancho) {
+    height:$alto;
+    width:$ancho;
+    
   }
+  .descripcionHerramienta {
+    @include ejemploMixin(100%, 100%)
+    
+  }
+  .descripcionHerramienta {
+    font-size: 20.5px
+  }
+
+
