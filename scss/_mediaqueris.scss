@@ -1,0 +1,38 @@
+@media screen and (max-width: 500px) {
+    .tableResponsive {
+        width: 100%;
+        overflow: auto;
+        
+    }
+    .flexItem {
+        width: 90px;
+        height: 90px;
+    }
+
+    .imagenMedianaGrande {
+        width: 50%;
+        height: 50%;
+    }
+
+    .videoYoutube {
+        width: 50%;
+        height: 50%;
+    }
+
+    .imagenUbicacion {
+        width: 50%;
+        height: 50%;
+    }
+
+    .fotoQuienesSomos {
+        transform: translate(0);
+    }
+    .red {
+        transform: scale(1);
+    }
+
+    .descripcionHerramienta {
+      font-size: 10px;
+    }
+}
+

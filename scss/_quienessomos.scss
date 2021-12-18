@@ -1,0 +1,27 @@
+#tituloquienessomos {
+    color: black;
+    background-color: blueviolet;
+    background-image: linear-gradient(to left, rgb(36, 15, 126), rgb(16, 186, 216));
+    
+}
+
+.fotoQuienesSomos {
+    margin: 0px;
+    
+}
+
+.quienessomosDescripcion {
+    font-style: italic ;
+    font-weight: bold;
+    font-size: 14.5px;
+    line-height: 1.6;
+    background-image: url(../IMAGENES/productos-ferreteria-industrial-online.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    padding: 0px;
+    margin: 0px;
+    border-style: solid;
+    
+
+}

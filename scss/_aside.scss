@@ -1,0 +1,27 @@
+.asidePublicidad {
+    width: 350px;
+    height: 350px;
+    color: black;
+    text-align: center;
+    background-color: turquoise;
+    border: 3px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    display: none; 
+    margin-bottom: 20px;
+    animation-name: rotacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    & img {
+        width: 100%;
+        z-index: -1000;
+    }
+ 
+    & p {
+     font-size: 1.875rem;
+     margin-top: 20px;
+ }
+}
+

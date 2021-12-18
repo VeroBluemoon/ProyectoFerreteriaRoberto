@@ -1,19 +1,19 @@
 .header {
     position: sticky;
     top: 0;
-    background-color: $colorAzul;
+    background-color: $colorWhite;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 9999;
     
-    &Logo {
+    &__logo {
     background-color: white;
     }
 
-    &Title {
+    &__title {
     background-color: rgb(241, 91, 91);
     }
 
-    &Menu {
+    &__menu {
     background-color: rgb(186, 243, 140);
     }
     

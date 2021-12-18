@@ -1,0 +1,60 @@
+.gridConteiner {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: 
+     "pintura destornillador destornillador"
+     "pintura motita clavos"
+     "pintura thinner clavos"
+     "pintura arena arena"
+ 
+}
+
+.gridItem {
+    
+    color: black;
+    text-decoration: black;
+    text-align: center;
+    transition: transform 1.2s; 
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+.redo {
+    background-color: rgb(165, 30, 7);
+    grid-area: pintura;
+}
+
+.blueo {
+    background-color: blue;
+    grid-area: destornillador;
+
+}
+
+.greeno {
+    background-color: rgb(5, 129, 42);
+    grid-area: thinner;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-area: clavos;
+}
+
+.violet {
+    background-color: violet;
+    grid-area: motita;
+
+}
+
+.turquesa {
+    background-color: turquoise;
+    grid-area: arena;
+}

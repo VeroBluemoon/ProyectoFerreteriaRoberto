@@ -1,0 +1,50 @@
+.flexConteiner {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; 
+    
+}
+
+.flexItem {
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.red {
+    background-color: rgb(165, 30, 7);
+
+    &:hover {
+    transform: scale(1.5);}
+}
+
+.blue {
+    background-color: blue;
+    & p {
+        color: white;
+    }
+    &:hover{
+    transform: rotate(45deg);
+    }
+    & p:hover{
+        transform: rotate(-45deg);       
+    }
+    
+}
+
+.green {
+    background-color: rgb(5, 129, 42);
+    &:hover {
+    transform: skew(15deg,0deg);
+    background-color: rgb(70, 6, 129);
+    }
+}
