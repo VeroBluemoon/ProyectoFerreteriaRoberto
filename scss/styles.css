@@ -271,4 +271,9 @@ footer {
   .red {
     transform: scale(1); }
   .descripcionHerramienta {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .boton, .boton--Whatssap, .boton--Messenger {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 70px; } }
