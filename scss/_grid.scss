@@ -31,13 +31,14 @@
 .redo {
     background-image: url(../IMAGENES/Pintura.jpg);
     background-repeat: no-repeat;
+
     grid-area: pintura;
 }
 
 .blueo {
     background-image: url(../IMAGENES/destornilladores.jpg);
     background-position: center;
-    
+    background-size: cover;
     background-color: yellow;
     grid-area: destornillador;
 
@@ -52,6 +53,7 @@
     background-image: url(../IMAGENES/Soga.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     grid-area: clavos;
 }
 
@@ -67,5 +69,6 @@
     background-image: url(../IMAGENES/CABLES.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     grid-area: arena;
 }
