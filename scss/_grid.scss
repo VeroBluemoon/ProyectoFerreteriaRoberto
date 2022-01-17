@@ -1,6 +1,6 @@
 .gridConteiner {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -16,45 +16,56 @@
 
 .gridItem {
     
-    color: black;
-    text-decoration: black;
+    color:black;
+    font-size: 50px;
+    font-style: bold;
     text-align: center;
     transition: transform 1.2s; 
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.07);
     }
 }
 
 
 .redo {
-    background-color: rgb(165, 30, 7);
+    background-image: url(../IMAGENES/Pintura.jpg);
+    background-repeat: no-repeat;
     grid-area: pintura;
 }
 
 .blueo {
-    background-color: blue;
+    background-image: url(../IMAGENES/destornilladores.jpg);
+    background-position: center;
+    
+    background-color: yellow;
     grid-area: destornillador;
 
 }
 
 .greeno {
-    background-color: rgb(5, 129, 42);
+    background-image: url(../IMAGENES/EZETA.jpg);
     grid-area: thinner;
 }
 
 .yellow {
-    background-color: yellow;
+    background-image: url(../IMAGENES/Soga.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     grid-area: clavos;
 }
 
 .violet {
-    background-color: violet;
+    background-image: url(../IMAGENES/Fastix1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     grid-area: motita;
 
 }
 
 .turquesa {
-    background-color: turquoise;
+    background-image: url(../IMAGENES/CABLES.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     grid-area: arena;
 }

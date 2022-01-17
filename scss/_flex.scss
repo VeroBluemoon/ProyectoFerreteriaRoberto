@@ -13,7 +13,7 @@
     width: 200px;
     height: 200px;
     color: white;
-    text-align: center;
+    text-align: end;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,30 +21,23 @@
 }
 
 .red {
-    background-color: rgb(165, 30, 7);
+    background-image: url(../IMAGENES/Estufa.jpg);
 
     &:hover {
     transform: scale(1.5);}
 }
 
 .blue {
-    background-color: blue;
-    & p {
-        color: white;
-    }
-    &:hover{
-    transform: rotate(45deg);
-    }
-    & p:hover{
-        transform: rotate(-45deg);       
-    }
-    
+    background-image: url(../IMAGENES/Manguera.jpg);
+  
+    &:hover {
+        transform: scale(1.5);}
 }
+   
 
 .green {
-    background-color: rgb(5, 129, 42);
+    background-image: url(../IMAGENES/Bujias.jpg);
     &:hover {
-    transform: skew(15deg,0deg);
-    background-color: rgb(70, 6, 129);
-    }
+        transform: scale(1.5);}
+    
 }

@@ -11,6 +11,7 @@
 
     &__title {
     background-color: rgb(241, 91, 91);
+    font-size: small;
     }
 
     &__menu {
@@ -20,11 +21,13 @@
     & nav ul{
     list-style-type: none;
     text-align: center;
+    font-size: 15px;
+    margin-left: 50px;
     }
     
     & nav li {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 30px;
     }
     
 }
