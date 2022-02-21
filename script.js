@@ -62,7 +62,7 @@ console.log(array8)
 console.log(array8.includes("Termocupla"))
 
 class Persona {
-    AsesordeCompras(nombre, apellido, edad) { 
+    constructor(nombre, apellido, edad) { 
     this.nombre = nombre;
     this.apellido = apellido;
     this.edad = edad;
@@ -75,9 +75,29 @@ const persona3 = new Persona("Raquel", "Lagatta", 65)
 let arrayPersonas = [persona1, persona2, persona3]
 
 for(let i= 0; i < arrayPersonas.length; i++) {
-    console.log(arrayPersonas[i])
+    console.log(i)
 }
 
 for(let personaEnArray of arrayPersonas){
- console.log(personaEnArray)
-}
+   console.log(personaEnArray)
+   /*for(let propiedad in arrayPersonas) {
+console.log(arrayPersonas[propiedad])}}*/
+   }
+arrayPersonas.forEach(persona => console.log(persona))
+
+console.log(arrayPersonas.find((persona) => persona.nombre === "Rodrigo" && persona.edad >=30 )) 
+console.log(arrayPersonas.filter((persona) => persona.nombre === "Raquel"))
+console.log(arrayPersonas.map((persona) => persona.edad))
+console.log(arrayPersonas.map((persona) => persona.edad >= 65))
+const arrayPersonas2 = arrayPersonas
+console.log(arrayPersonas2.sort(function(persona1, persona2) {
+    if(persona1.nombre < persona2.nombre) {
+        return -1
+    }
+
+    if(persona1.nombre > persona2.nombre) {
+        return 1
+    }
+
+    return 0
+}))
