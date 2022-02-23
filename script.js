@@ -101,3 +101,52 @@ console.log(arrayPersonas2.sort(function(persona1, persona2) {
 
     return 0
 }))
+
+console.log(document.getElementById("nuevosproductos"))
+console.log(document.getElementsByClassName("fondonegro"))
+console.log(document.getElementsByClassName("header")[0].children[0])
+console.log(document.getElementsByTagName("p"))
+
+let etiquetasP = document.getElementsByTagName("p")
+for(let parrafo of etiquetasP) {
+    console.log(parrafo)
+}
+
+let humor = document.getElementById("humor")
+humor.innerText += " MENSUAL"
+
+let historiaId = document.getElementById("historia")
+historiaId.innerHTML += `
+    <h3 id="1" class="epigrafe">Nuestros Equipo de Atencion al Cliente Siempre disponible las 24 hs</h3>
+`
+let divcontenidos = document.getElementById("divcontenidos");
+divcontenidos.remove()
+
+class personaN {
+    constructor(id, nombre, apellido, edad, dni) {
+        this.id = id;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.dni = dni;
+    }
+}
+
+const persona6 = new personaN(1, "Veronica", "Apollonio", 36, 31723017)
+const persona7 = new personaN(2, "Cecilia", "Exposito", 46, 22754176)
+const persona8 = new personaN(3, "Tatiana", "Basaj", 31, 36456098)
+
+const personas = [persona6, persona7, persona8]
+let divPersonas = document.getElementById('divPersonas')
+
+personas.forEach(personaEnArray => {
+    divPersonas.innerHTML += `
+        <div id="${personaEnArray.id}" class="personas">
+            <img class="imagenUbicacion" class="footerArticleUbicacion" src="https://colombia.argos.co/wp-content/uploads/2021/09/Progra%CC%81mate-con-las-pro%CC%81ximas-ferias-especializadas-para-ferreteros-.jpg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            <p> Nombre: ${personaEnArray.nombre}</p>
+            <p> Apellido: ${personaEnArray.apellido}</p>
+            <p> Edad: ${personaEnArray.edad}</p>
+            <p> Dni: ${personaEnArray.dni}</p>
+        </div>
+    `
+})
