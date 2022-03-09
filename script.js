@@ -103,6 +103,14 @@ if(persona1.nombre > persona2.nombre) {
 return 0
 }))
 
+
+let [a,b] = arrayPersonas
+console.log(a)
+console.log(b)
+
+console.log(...arrayPersonas)
+
+
 console.log(document.getElementById("nuevosproductos"))
 console.log(document.getElementsByClassName("fondonegro"))
 console.log(document.getElementsByClassName("header")[0].children[0])
@@ -301,3 +309,89 @@ botonPersonal.addEventListener("click", () => {
              `
     })
 })
+
+let edad = 18
+edad >= 18 ? alert("Puede Navegar en este Sitio") : alert("No puede navegar en este sitio")
+
+const carrito = []
+
+carrito.length === 0 && console.log("El carrito esta vacio")
+
+const usuario1 = {
+    nombre: "Jonny Cash",
+    edad: 65
+}
+
+
+const usuario2 = null
+
+console.log(usuario1 || "El usuario no existe")
+
+console.log(usuario2 || "El usuario no existe")
+
+if("null" ?? undefined) {
+    console.log("V")
+} else {
+    console.log("F")
+}
+
+const persona22 = {nombre : "Roberto", apellido: "Apollonio"}
+
+console.log(persona22?.name || "Propiedad no encontrada")
+
+let {nombre, apellido} = persona22
+
+console.log(nombre)
+console.log(apellido)
+
+class PersonaL {
+    constructor(nombre, apellido, edad, licencia) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.licencia = licencia;
+    }
+
+}
+
+const personaL1 =new PersonaL("Julio", "Perez", "80", {tipo: "B1", fechaVencimiento: "20/08/2022"}
+)
+
+let {licencia : licenciaDeConducir} = personaL1
+
+console.log(licenciaDeConducir)
+
+function desestructurame (objPersona) {
+    let {licencia} = objPersona
+    console.log(licencia)
+}
+
+desestructurame(personaL1)
+
+
+const cliente1 = {
+    nombre: "Osmar",
+    edad: 56,
+    region: "Caseros"
+}
+
+const cliente2= {
+    ...cliente1
+}
+
+console.log(cliente2)
+
+const cliente3 = {
+    ...cliente1,
+    sucursal: "Villa Pineral",
+    contacto: "4750 9290"
+}
+
+console.log(cliente3)
+
+function sumar(...numeros) {
+    return numeros;
+    //console.log(numeros.reduce((num1, num2) => num1 + num2, 0))
+}
+let arrayNumeros = sumar(10, 15, 30, 5)
+console.log(arrayNumeros)
