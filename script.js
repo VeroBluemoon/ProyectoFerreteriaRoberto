@@ -56,7 +56,13 @@ let indice = array8.indexOf(productoABuscar)
 if(indice !== -1){
 array8.splice(indice,1)
 } else {
-alert("Usuario no encontrado")
+//alert("Usuario no encontrado")
+swal({
+    title: 'Usuario no encontrado',
+    text: 'Usuario no encontrado' ,
+    icon: 'alert',
+    confirmButtonText: 'cool'
+})
 }
 console.log(array8)
 
@@ -395,3 +401,33 @@ function sumar(...numeros) {
 }
 let arrayNumeros = sumar(10, 15, 30, 5)
 console.log(arrayNumeros)
+
+document.getElementById('botonAlerta').addEventListener('click', () => {
+swal({
+    title: 'Chiste-Chiste',
+    text: 'Un atracador secuestró a toda una famila, y se quedo sin tener a quien pedir rescate!!!!',
+    icon: 'chiste',
+    confirmButtonText: 'cool'
+    })
+})
+
+Toastify({
+    text: "Bienvenidos al Mundo de Ferreteria Roberto",
+    duration: 20000,
+    destination: "https://github.com/apvarun/toastify-js",
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "left", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
+
+  const DateTime = luxon.DateTime
+  const now = DateTime.now()
+  console.log(now.toString() )
+
+  
