@@ -430,4 +430,107 @@ Toastify({
   const now = DateTime.now()
   console.log(now.toString() )
 
-  
+console.log("Inicio")
+
+  setTimeout(() => {
+      console.log("Esperando")
+}, 1000)
+
+console.log("Fin")
+
+/*for(let i of "Hola") {
+      console.log(i)
+}
+
+for(let j of "Mundo") {
+    console.log(j)
+}*/
+
+for(let i of "Hola") {
+    setTimeout(() => {
+        console.log(i)
+    },5000)
+}
+
+for(let j of "Mundo") {
+    setTimeout(() => {
+        console.log(j)
+    },10000)
+}
+
+const probarPromesa = (val) => {
+    return new Promise ((res, rej) => {
+        if(val === true) {
+            res("Promesa afirmativa")
+        } else (
+            rej("Promesa no cumplida")
+        )
+    }
+    )
+}
+console.log(probarPromesa(true))
+console.log(probarPromesa(false))
+
+const eventoFuturo = (res) => {
+    return new Promise( (resolve, reject) => {
+        setTimeout( () => {
+            res ? resolve('Promesa resuelta') : reject('Promesa rechazada')
+        }, 2000)
+        })
+    }
+ console.log( eventoFuturo(true) )
+
+ eventoFuturo(true)
+      .then( (response) => {
+          console.log(response)
+      })
+
+
+      .catch( (error) => {
+          console.log(error)
+      })
+
+      .finally( () => {
+          console.log("Fin del Proceso")
+      })
+
+      let arrayPromesa = [
+          {nombre: "Fabio", apellido: "Coder"},
+          {nombre: "Hector", apellido: "Gimenez"},
+          {nombre: "Patricio", apellido: "Suarez"},
+      ]
+
+      const pedirInfo = () => {
+          return new Promise((res,rej) => {
+              setTimeout( () => {
+                  res(arrayPromesa)
+              }, 3000)
+          })
+      }
+
+console.log(pedirInfo())
+
+let divDolar = document.getElementById('divDolar')
+
+fetch("https://criptoya.com/api/dolar")
+.then(response => response.json())
+.then(data => {
+    //console.log(data)
+    let{blue, oficial, ccl, mep, ccb, solidario} = data
+
+    divDolar.innerHTML = `
+         <h2> FERRETERIA ROBERTO TE BRINDA EL VALOR DOLAR EN TODO MOMENTO </h2>
+         <P> Oficial: $${oficial} </p>
+         <P> Solidario: $${solidario} </p>
+         <P> Mep: $${mep} </p>
+         <P> Ccl: $${ccl} </p>
+         <P> Ccb: $${ccb} </p>
+         <P> Blue: $${blue} </p>
+    `
+})
+
+fetch('clientes.json')
+.then(response => response.json())
+.then(clientes => {
+    console.log(clientes)
+})
