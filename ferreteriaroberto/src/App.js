@@ -1,6 +1,7 @@
 import React from "react";
-import Footer from "./component/Footer";
 import NavBar from "./component/NavBar";
+import ItemListContainer from "./component/ItemListContainer";
+
  
 
  export default function App() {
@@ -8,8 +9,8 @@ import NavBar from "./component/NavBar";
 
   return (
     <>
-     <NavBar />
-     <Footer />
+    <NavBar />
+    <ItemListContainer/>
     </>
   );
 

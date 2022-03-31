@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import CartWidget from "./CartWidget";
  
 
  export default function NavBar() {
@@ -29,7 +30,8 @@ import NavDropdown from "react-bootstrap/NavDropdown";
             </Navbar.Collapse>
          </div>
         </Navbar>
-
+        <h3>Ferreteria Roberto</h3>
+        <CartWidget />
         </>
     );
 
