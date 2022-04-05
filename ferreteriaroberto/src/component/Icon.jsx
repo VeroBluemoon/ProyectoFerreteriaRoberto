@@ -1,14 +1,9 @@
 import React from "react";
 
- 
-
- export default function CartWidget() {
-
-
+export default function Icon({ cant }) {
     return (
         <>
-       
+        🛒({cant})
         </>
     );
-
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./component/NavBar";
 import ItemListContainer from "./component/ItemListContainer";
+import Footer from "./component/Footer";
 
  
 
@@ -11,6 +12,8 @@ import ItemListContainer from "./component/ItemListContainer";
     <>
     <NavBar />
     <ItemListContainer/>
+    <br />
+    <Footer />
     </>
   );
 

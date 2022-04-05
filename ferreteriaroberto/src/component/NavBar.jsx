@@ -1,8 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import Icon from  "./Icon" ;
 import CartWidget from "./CartWidget";
  
 
@@ -12,8 +10,8 @@ import CartWidget from "./CartWidget";
     return (
         <>
         <Navbar bg="light" expand="lg">
-         <div>
-            <Navbar.Brand href="#home">Ferreteria Roberto</Navbar.Brand>
+        <Container>
+            <Navbar.Brand href="#home">LOGO</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -24,12 +22,14 @@ import CartWidget from "./CartWidget";
                 <NavDropdown.Item href="#action/3.2">Electricidad</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Pintureria</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Outlet</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.4">Ubicacion</NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link href="#link"><Icon cant={20} /></Nav.Link>
             </Nav>
             </Navbar.Collapse>
-         </div>
-        </Navbar>
+        </Container>
+        </Navbar>  
+        
         <h3>Ferreteria Roberto</h3>
         <CartWidget />
         </>
