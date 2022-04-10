@@ -26,9 +26,9 @@ export default function ItemCount({ stock }) {
 return (
         
             <div>
-            <Button onCLick={subs} variant="danger">-</Button> 
+            <Button onClick={subs} variant="danger">-</Button> 
             <p>{count}</p>
-            <Button onCLick={adding} variant="success">+</Button>
+            <Button onClick={adding} variant="success">+</Button>
             <Button onClick= {onAdd} variant="primary">Comprar</Button>{' '}
             
             </div>
