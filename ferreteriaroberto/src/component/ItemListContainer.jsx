@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import ItemCount from "./ItemCount";
+import ItemList from "./ItemList";
+import customFetch from "./Utils/customFetch";
+import productos from './Utils/productos';
+
 
  
 export default function ItemListContainer() {
@@ -29,12 +32,20 @@ const [x, setX] = useState([]);
         })
        
     }, [])
+    
+    const [items, setItems] = useState([]);
 
+    useEffect(() => {
+        customFetch(3000, productos)
+        .then(resultado => setItems(resultado))
+        .catch(error => console.log(error));
+    }, [items])
+    
     return (
         <>
-        <br/> aca va la x: {x.map(item => <p key={item.id}>{item.id + " " + item.name}</p>)}
+        {/*<br/> Mapeo Con X Prueba{x.map(Item => <p key={Item.id}>{Item.id + " " + item.name}</p>)}*/}
         <div>
-       <ItemCount stock={5}/>
+        <ItemList productos={items}/>
         </div>
 
         </>

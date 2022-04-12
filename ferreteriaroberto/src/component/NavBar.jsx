@@ -13,7 +13,7 @@ import CartWidget from "./CartWidget";
         <>
         <Navbar  bg="light" expand="lg"> 
         <Container>
-            <Navbar.Brand href="#home">LOGO</Navbar.Brand>
+            <Navbar.Brand href="#home">FERRETERIA ROBERTO</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -29,11 +29,12 @@ import CartWidget from "./CartWidget";
                 <Nav.Link href="#link"><Icon cant={20} /></Nav.Link>
             </Nav>
             </Navbar.Collapse>
+            <CartWidget />
         </Container>
         </Navbar>  
         
-        <h3>Ferreteria Roberto</h3>
-        <CartWidget />
+        <h3>Donde encontraras el cosito del cosito</h3>
+       
         </>
     );
 
